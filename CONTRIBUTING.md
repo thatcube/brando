@@ -74,7 +74,9 @@ Replace the file in `logos/` and commit. **No README needs to change** — every
 README references the logo by its `raw.githubusercontent.com` URL on `main`, so
 new art appears everywhere as soon as it lands here.
 
-Logos are 32×32 SVG pixel art with transparent backgrounds, rendered at 48px (an integer 1.5x, so the pixel grid stays clean).
+Logos are 32×32 SVG pixel art with transparent backgrounds. The footer shows
+them inside a lockup rendered at `lockupHeight` from `apps.json` — change that
+one number to resize the whole row.
 The personal wordmark ships in two colours and is served through `<picture>` so
 it stays legible on GitHub's light and dark themes.
 

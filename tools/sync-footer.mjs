@@ -34,7 +34,7 @@ const url = (p) => `${config.cdn.replace(/\/$/, "")}/${p.replace(/^\//, "")}`;
 //      reserve layout space — and it stays visible through transparent art,
 //      so every logo appears to sit on a grey rounded plate.
 function render({ includeAuthor = true } = {}) {
-  const size = config.logoSize;
+  const size = config.lockupHeight;
   const gap = "&nbsp;".repeat(6);
 
   // Each app is a single pre-rendered lockup (icon + name drawn together by

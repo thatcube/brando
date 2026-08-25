@@ -1,7 +1,8 @@
 {
-  "$comment": "Single source of truth for the 'More open source from Brandon' footer. Edit this file, then run `node tools/sync-footer.mjs` to rewrite the footer in every repo listed in repos.json.",
+  "$comment": "Single source of truth for the shared README footer. Edit this file, then run `python3 tools/build-lockups.py` (only needed if a name or logo changed) and `node tools/sync-footer.mjs`. lockupHeight is the rendered height of each icon+name lockup.",
   "cdn": "https://raw.githubusercontent.com/thatcube/brando/main",
   "heading": "More open source",
+  "lockupHeight": 40,
   "author": {
     "name": "Brandon Moore",
     "url": "https://brando.page",
@@ -9,7 +10,6 @@
     "logoDark": "logos/brando-white.svg",
     "height": 22
   },
-  "logoSize": 26,
   "apps": [
     {
       "name": "Hozz",
