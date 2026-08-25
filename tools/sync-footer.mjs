@@ -102,9 +102,20 @@ if (printOnly) {
 
 writeFileSync(join(ROOT, "footer.md"), `${block}\n`);
 
+// A path passed on the command line that isn't in repos.json is still valid —
+// Plozz and friends are often worked on in a git worktree, which lives nowhere
+// near the checkout listed here.
+const known = new Set(targets.map((t) => resolve(ROOT, t.path)));
+const adhoc = only
+  .filter((o) => !known.has(resolve(o)))
+  .map((o) => ({ name: `${o} (ad-hoc)`, path: resolve(o) }));
+
+const queue = only.length
+  ? [...targets.filter((t) => only.some((o) => resolve(o) === resolve(ROOT, t.path))), ...adhoc]
+  : targets;
+
 let stale = 0;
-for (const target of targets) {
-  if (only.length && !only.some((o) => resolve(o) === resolve(ROOT, target.path))) continue;
+for (const target of queue) {
   const readme = resolve(ROOT, target.path, target.readme ?? "README.md");
   if (!existsSync(readme)) {
     console.warn(`skip   ${target.name} — no README at ${readme}`);

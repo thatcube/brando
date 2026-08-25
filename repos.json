@@ -3,7 +3,8 @@
   "targets": [
     {
       "name": "Plozz",
-      "path": "../Plozz"
+      "path": "../Plozz",
+      "$note": "Plozz work often happens in a worktree; pass that path explicitly when it does."
     },
     {
       "name": "Mozz",
