@@ -38,3 +38,7 @@
   <a href="https://github.com/thatcube/hozz"><b>Hozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Mozz"><b>Mozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Plozz"><b>Plozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Twozz"><b>Twozz</b></a>
 </p>
 <!-- app-family:end -->
+
+<!-- probe -->
+<p align="center"><picture><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/plozz.svg" width="128" alt="probe-bare-picture" /></picture></p>
+<p align="center"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/plozz.svg" width="128" alt="probe-plain-img" /></p>
