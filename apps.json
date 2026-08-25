@@ -1,0 +1,39 @@
+{
+  "$comment": "Single source of truth for the 'More open source from Brandon' footer. Edit this file, then run `node tools/sync-footer.mjs` to rewrite the footer in every repo listed in repos.json.",
+  "cdn": "https://raw.githubusercontent.com/thatcube/brando/main",
+  "heading": "More open source from Brandon",
+  "author": {
+    "name": "Brandon Moore",
+    "url": "https://brando.page",
+    "logoLight": "logos/brando-black.svg",
+    "logoDark": "logos/brando-white.svg",
+    "height": 22
+  },
+  "logoSize": 44,
+  "apps": [
+    {
+      "name": "Hozz",
+      "tagline": "Apple Health, exported to storage you own",
+      "logo": "logos/hozz.svg",
+      "repo": "https://github.com/thatcube/hozz"
+    },
+    {
+      "name": "Mozz",
+      "tagline": "Your music, wherever it lives \u2014 iPhone &amp; iPad",
+      "logo": "logos/mozz.svg",
+      "repo": "https://github.com/thatcube/Mozz"
+    },
+    {
+      "name": "Plozz",
+      "tagline": "Movies &amp; TV on Apple TV, iPhone &amp; iPad",
+      "logo": "logos/plozz.svg",
+      "repo": "https://github.com/thatcube/Plozz"
+    },
+    {
+      "name": "Twozz",
+      "tagline": "Twitch on Apple TV, with real emotes",
+      "logo": "logos/twozz.svg",
+      "repo": "https://github.com/thatcube/Twozz"
+    }
+  ]
+}

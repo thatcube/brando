@@ -1,0 +1,13 @@
+{
+  "$comment": "Every repo that carries the shared footer. Paths are relative to this repo, or absolute. `readme` defaults to README.md.",
+  "targets": [
+    { "name": "Plozz", "path": "../Plozz" },
+    { "name": "Mozz", "path": "../Mozz" },
+    { "name": "Hozz", "path": "../hozz" },
+    { "name": "Twozz", "path": "../Twizz" },
+    { "name": "plozz-website", "path": "../plozz-website" },
+    { "name": "mozz-website", "path": "../mozz-website" },
+    { "name": "hozz-website", "path": "../hozz-website" },
+    { "name": "brando (this repo)", "path": "." }
+  ]
+}
