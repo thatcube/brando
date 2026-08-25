@@ -1,7 +1,7 @@
 {
   "$comment": "Single source of truth for the 'More open source from Brandon' footer. Edit this file, then run `node tools/sync-footer.mjs` to rewrite the footer in every repo listed in repos.json.",
   "cdn": "https://raw.githubusercontent.com/thatcube/brando/main",
-  "heading": "More open source from Brandon",
+  "heading": "More open source",
   "author": {
     "name": "Brandon Moore",
     "url": "https://brando.page",

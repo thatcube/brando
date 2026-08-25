@@ -37,13 +37,14 @@ function render({ includeAuthor = true } = {}) {
   const size = config.logoSize;
   const gap = "&nbsp;".repeat(6);
 
-  // Icon and name live inside the same anchor, on one line. A separate row of
-  // labels drifts out from under its icons, because text centres by its own
-  // width and has no idea where the icons above it landed.
+  // Icon and name are adjacent on one line, so the label cannot drift away
+  // from its icon the way a separate centred row of labels does. They are two
+  // anchors rather than one, because a link underline spans everything inside
+  // the anchor — including the icon and the gap after it.
   const row = config.apps
     .map(
       (app) =>
-        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" align="middle" alt="" />&nbsp;<b>${app.name}</b></a>`
+        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" align="middle" alt="${app.name}" /></a>&nbsp;<a href="${app.repo}"><b>${app.name}</b></a>`
     )
     .join(`\n  ${gap}\n  `);
 
