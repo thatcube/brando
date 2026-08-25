@@ -24,8 +24,15 @@ const { targets } = JSON.parse(readFileSync(join(ROOT, "repos.json"), "utf8"));
 
 const url = (p) => `${config.cdn.replace(/\/$/, "")}/${p.replace(/^\//, "")}`;
 
-// Deliberately table-free: GitHub styles <table> cells with borders and zebra
-// striping, which reads as an opaque box behind every icon.
+// Two GitHub rendering traps are deliberately avoided here:
+//
+//   1. No <table>. GitHub styles table cells with borders and zebra striping,
+//      which reads as an opaque box behind every icon.
+//   2. Images set `width` but never both `width` and `height`. Given both,
+//      GitHub injects a `js-gh-image-fallback` placeholder
+//      (`background-color: var(--bgColor-muted); border-radius: 6px`) to
+//      reserve layout space — and it stays visible through transparent art,
+//      so every logo appears to sit on a grey rounded plate.
 function render({ includeAuthor = true } = {}) {
   const size = config.logoSize;
   const gap = "&nbsp;".repeat(6);
@@ -33,7 +40,7 @@ function render({ includeAuthor = true } = {}) {
   const row = config.apps
     .map(
       (app) =>
-        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" alt="${app.name}" /></a>`
+        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" alt="${app.name}" /></a>`
     )
     .join(`\n  ${gap}\n  `);
 
