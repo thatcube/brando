@@ -33,7 +33,7 @@ function render({ includeAuthor = true } = {}) {
   const row = config.apps
     .map(
       (app) =>
-        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" height="${size}" alt="${app.name}" /></a>`
+        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" alt="${app.name}" /></a>`
     )
     .join(`\n  ${gap}\n  `);
 
