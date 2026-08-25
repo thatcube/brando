@@ -37,16 +37,15 @@ function render({ includeAuthor = true } = {}) {
   const size = config.logoSize;
   const gap = "&nbsp;".repeat(6);
 
+  // Icon and name live inside the same anchor, on one line. A separate row of
+  // labels drifts out from under its icons, because text centres by its own
+  // width and has no idea where the icons above it landed.
   const row = config.apps
     .map(
       (app) =>
-        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" alt="${app.name}" /></a>`
+        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" align="middle" alt="" />&nbsp;<b>${app.name}</b></a>`
     )
     .join(`\n  ${gap}\n  `);
-
-  const names = config.apps
-    .map((app) => `<a href="${app.repo}"><b>${app.name}</b></a>`)
-    .join(" &nbsp;·&nbsp; ");
 
   const a = config.author;
 
@@ -72,10 +71,6 @@ function render({ includeAuthor = true } = {}) {
 
 <p align="center">
   ${row}
-</p>
-
-<p align="center">
-  ${names}
 </p>
 ${author}${END}`;
 }

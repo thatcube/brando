@@ -9,7 +9,7 @@
     "logoDark": "logos/brando-white.svg",
     "height": 22
   },
-  "logoSize": 48,
+  "logoSize": 32,
   "apps": [
     {
       "name": "Hozz",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Mozz",
-      "tagline": "Your music, wherever it lives — iPhone &amp; iPad",
+      "tagline": "Your music, wherever it lives",
       "logo": "logos/mozz.svg",
       "repo": "https://github.com/thatcube/Mozz"
     },
