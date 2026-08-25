@@ -5,38 +5,19 @@
 
 <p align="center"><b>More open source from Brandon</b></p>
 
-<table align="center">
-  <tr>
-    <td align="center" width="180">
-      <a href="https://github.com/thatcube/hozz"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/hozz.svg" width="44" height="44" alt="Hozz logo" /></a>
-      <br />
-      <a href="https://github.com/thatcube/hozz"><b>Hozz</b></a>
-      <br />
-      <sub>Apple Health, exported to storage you own</sub>
-    </td>
-    <td align="center" width="180">
-      <a href="https://github.com/thatcube/Mozz"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/mozz.svg" width="44" height="44" alt="Mozz logo" /></a>
-      <br />
-      <a href="https://github.com/thatcube/Mozz"><b>Mozz</b></a>
-      <br />
-      <sub>Your music, wherever it lives — iPhone &amp; iPad</sub>
-    </td>
-    <td align="center" width="180">
-      <a href="https://github.com/thatcube/Plozz"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/plozz.svg" width="44" height="44" alt="Plozz logo" /></a>
-      <br />
-      <a href="https://github.com/thatcube/Plozz"><b>Plozz</b></a>
-      <br />
-      <sub>Movies &amp; TV on Apple TV, iPhone &amp; iPad</sub>
-    </td>
-    <td align="center" width="180">
-      <a href="https://github.com/thatcube/Twozz"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/twozz.svg" width="44" height="44" alt="Twozz logo" /></a>
-      <br />
-      <a href="https://github.com/thatcube/Twozz"><b>Twozz</b></a>
-      <br />
-      <sub>Twitch on Apple TV, with real emotes</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/thatcube/hozz" title="Hozz — Apple Health, exported to storage you own"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/hozz.svg" width="48" height="48" alt="Hozz" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/thatcube/Mozz" title="Mozz — Your music, wherever it lives — iPhone &amp; iPad"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/mozz.svg" width="48" height="48" alt="Mozz" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/thatcube/Plozz" title="Plozz — Movies &amp; TV on Apple TV, iPhone &amp; iPad"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/plozz.svg" width="48" height="48" alt="Plozz" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/thatcube/Twozz" title="Twozz — Twitch on Apple TV, with real emotes"><img src="https://raw.githubusercontent.com/thatcube/brando/main/logos/twozz.svg" width="48" height="48" alt="Twozz" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/thatcube/hozz"><b>Hozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Mozz"><b>Mozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Plozz"><b>Plozz</b></a> &nbsp;·&nbsp; <a href="https://github.com/thatcube/Twozz"><b>Twozz</b></a>
+</p>
 
 <p align="center">
   <a href="https://brando.page">
@@ -46,6 +27,4 @@
     </picture>
   </a>
 </p>
-
-<p align="center"><sub>Built by <a href="https://brando.page">Brandon Moore</a>. Free, open source, no ads, no accounts.</sub></p>
 <!-- app-family:end -->
