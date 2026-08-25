@@ -37,14 +37,17 @@ function render({ includeAuthor = true } = {}) {
   const size = config.logoSize;
   const gap = "&nbsp;".repeat(6);
 
-  // Icon and name are adjacent on one line, so the label cannot drift away
-  // from its icon the way a separate centred row of labels does. They are two
-  // anchors rather than one, because a link underline spans everything inside
-  // the anchor — including the icon and the gap after it.
+  // Each app is a single pre-rendered lockup (icon + name drawn together by
+  // tools/build-lockups.py), not an image beside a markdown link. A link's
+  // text is always GitHub blue and an image on a text baseline never lines up
+  // with the words next to it; drawing both into one SVG settles both.
+  const lockup = (app, mode) =>
+    url(`logos/lockups/${app.logo.split("/").pop().replace(/\.svg$/, "")}-${mode}.svg`);
+
   const row = config.apps
     .map(
       (app) =>
-        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><img src="${url(app.logo)}" width="${size}" align="middle" alt="${app.name}" /></a>&nbsp;<a href="${app.repo}"><b>${app.name}</b></a>`
+        `<a href="${app.repo}" title="${app.name} — ${app.tagline}"><picture><source media="(prefers-color-scheme: dark)" srcset="${lockup(app, "dark")}" /><img src="${lockup(app, "light")}" height="${size}" alt="${app.name}" /></picture></a>`
     )
     .join(`\n  ${gap}\n  `);
 
