@@ -19,6 +19,11 @@
       "path": "../Twizz"
     },
     {
+      "name": "Scrozz",
+      "path": "../scrozz",
+      "$note": "Scrozz README work happens in a worktree; pass that path explicitly when it does."
+    },
+    {
       "name": "plozz-website",
       "path": "../plozz-website"
     },

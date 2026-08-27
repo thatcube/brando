@@ -30,6 +30,12 @@
       "repo": "https://github.com/thatcube/Plozz"
     },
     {
+      "name": "Scrozz",
+      "tagline": "Screenshots that go where you need them",
+      "logo": "logos/scrozz.svg",
+      "repo": "https://github.com/thatcube/scrozz"
+    },
+    {
       "name": "Twozz",
       "tagline": "Twitch on Apple TV, with real emotes",
       "logo": "logos/twozz.svg",
